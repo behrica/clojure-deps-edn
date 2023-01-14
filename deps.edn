@@ -178,6 +178,8 @@
                 cider/cider-nrepl             {:mvn/version "0.28.7"}
                 refactor-nrepl/refactor-nrepl {:mvn/version "3.6.0"}}
    :main-opts  ["-m" "nrepl.cmdline"
+                "-p" "12345"
+                "-b" "0.0.0.0"
                 "--middleware" "[refactor-nrepl.middleware/wrap-refactor,cider.nrepl/cider-middleware]"
                 "--interactive"]}
 
